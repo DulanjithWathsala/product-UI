@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useCart } from "../store/CartContext";
+import { useCart } from "../store/CartContext.js";
 
 export default function Header() {
   const { cart } = useCart();
