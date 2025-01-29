@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import { useCart } from "../store/CartContext.js";
+import { CartContext } from "../store/CartContext.js";
+import { useContext } from "react";
 
 export default function Header() {
-  const { cart } = useCart();
+  const { cart } = useContext(CartContext);
 
   return (
     <header className="bg-blue-600 text-white p-4 flex justify-between items-center">

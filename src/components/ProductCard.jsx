@@ -1,7 +1,8 @@
-import { useCart } from "../store/CartContext.js";
+import { useContext } from "react";
+import { CartContext } from "../store/CartContext.js";
 
 const ProductCard = ({ product }) => {
-  const { addToCart } = useCart();
+  const { addToCart } = useContext(CartContext);
 
   return (
     <div className="border p-4 rounded-lg shadow-md">
